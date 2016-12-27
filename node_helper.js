@@ -1,5 +1,5 @@
 /* Magic Mirror
- * Node Helper: DailyBibleVerse
+ * Node Helper: MMM-DailyBibleVerse
  *
  * By Arthur Garza
  * MIT Licensed.
@@ -11,18 +11,17 @@ var request = require('request');
 module.exports = NodeHelper.create({
 	// Subclass start method.
 	start: function() {
-		this.mySpecialProperty = "So much wow!";
-		console.log("Started node_helper.js for DailyBibleVerse.");
+		console.log("Started node_helper.js for MMM-DailyBibleVerse.");
 	},
 
 	socketNotificationReceived: function(notification, payload) {
 		console.log(this.name + " node helper received a socket notification: " + notification + " - Payload: " + payload);
-		this.bibleGatewayRequest();
+		this.bibleGatewayRequest(payload);
 	},
 
-	bibleGatewayRequest: function() {
+	bibleGatewayRequest: function(version) {
 		var self = this;
-		var bibleGatewayURL = "https://www.biblegateway.com/votd/get/?format=json"
+		var bibleGatewayURL = "https://www.biblegateway.com/votd/get/?format=json&version=" + version
 
 		request({ url: bibleGatewayURL, method: 'GET' }, function(error, response, body) {			
 			if(!error && response.statusCode == 200){
