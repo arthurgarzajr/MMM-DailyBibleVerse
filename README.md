@@ -3,7 +3,6 @@ This an extension for the [MagicMirror](https://github.com/MichMich/MagicMirror)
 
 ## Installation
 1. Navigate into your MagicMirror's `modules` folder and execute `https://github.com/arthurgarzajr/MMM-DailyBibleVerse.git`. A new folder will appear navigate into it.
-2. Execute `npm install` to install the node dependencies.
 
 ## Using the module
 
