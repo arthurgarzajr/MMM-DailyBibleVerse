@@ -1,5 +1,5 @@
 # MMM-DailyBibleVerse
-This an extension for the [MagicMirror](https://github.com/MichMich/MagicMirror). It will display the verse of the day from www.biblegateway.com. You can change the version of the verse of the day in the config file. Here is a list of the supported Bible versions: https://www.biblegateway.com/usage/linking/versionslist/
+This an extension for the [MagicMirror](https://github.com/MichMich/MagicMirror). It will display the verse of the day from www.biblegateway.com. You can change the version of the verse of the day in the config file. Here is a list of the supported Bible versions: https://www.biblegateway.com/versions/
 
 ## Installation
 1. Navigate into your MagicMirror's `modules` folder and execute `https://github.com/arthurgarzajr/MMM-DailyBibleVerse.git`. A new folder will appear navigate into it.
@@ -36,7 +36,7 @@ The following properties can be configured:
 	<tbody>
 		<tr>
 			<td><code>version</code></td>
-			<td>Here is a list of the supported Bible versions: https://www.biblegateway.com/usage/linking/versionslist/
+			<td>Here is a list of the supported Bible versions: https://www.biblegateway.com/versions/
       <br/>
       Examples: ESV, NIV, RV1960, etc.
 			</td>
