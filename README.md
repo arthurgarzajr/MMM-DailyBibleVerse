@@ -49,7 +49,7 @@ The following properties can be configured:
 The MIT License (MIT)
 =====================
 
-Copyright © 2016 Paul-Vincent Roll
+Copyright © 2016-2017 Arthur Garza
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
