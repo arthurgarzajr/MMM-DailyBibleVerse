@@ -14,12 +14,14 @@ Module.register("MMM-DailyBibleVerse",{
 		Log.info("Starting module: " + this.name);
 		var self = this;
 
+		var configuredVersion = this.config.version;
+
 		//Do this once first
-		self.sendSocketNotification('START', this.config.version);
+		self.sendSocketNotification('START', configuredVersion);
 		
 		//Then every hour
 		setInterval(function() {
-		        self.sendSocketNotification('START', this.config.version);
+		        self.sendSocketNotification('START', configuredVersion);
     		}, 3600000); //perform every hour (3600000 milliseconds)
 	},
 	
