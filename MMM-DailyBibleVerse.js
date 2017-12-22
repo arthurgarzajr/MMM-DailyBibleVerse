@@ -34,7 +34,7 @@ Module.register("MMM-DailyBibleVerse",{
 
 		if(this.verseOfTheDay != null && this.reference != null){
 			verse = this.verseOfTheDay;
-			reference = " -" + this.reference;
+			reference = " - " + this.reference;
 		}
 
 		var wrapper = document.createElement("div");
