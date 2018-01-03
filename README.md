@@ -13,7 +13,7 @@ modules: [
 		module: 'MMM-DailyBibleVerse',
 		position: 'bottom_bar',	// This can be any of the regions. Best result is in the bottom_bar as verses can take multiple lines in a day.
 		config: {
-            version: 'NIV' // This can be changed to any version you want that is offered by Bible Gateway. For a list, go here: https://www.biblegateway.com/usage/linking/versionslist/
+            version: 'NIV' // This can be changed to any version you want that is offered by Bible Gateway. For a list, go here: https://www.biblegateway.com/versions/
 		}
 	}
 ]
@@ -37,8 +37,12 @@ The following properties can be configured:
 			<td><code>version</code></td>
 			<td>Here is a list of the supported Bible versions: https://www.biblegateway.com/versions/
       <br/>
-      Examples: ESV, NIV, RV1960, etc.
+      Examples: <code>ESV</code>, <code>NIV</code>, <code>RV1960</code>, etc.
 			</td>
+		</tr>
+		<tr>
+			<td><code>size</code></td>
+			<td>Default size is medium but it can be overriden with <code>xsmall</code>, <code>small</code> or <code>large</code>.</td>
 		</tr>
 	</tbody>
 </table>
