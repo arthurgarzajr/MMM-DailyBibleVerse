@@ -13,7 +13,7 @@ modules: [
 		module: 'MMM-DailyBibleVerse',
 		position: 'bottom_bar',	// This can be any of the regions. Best result is in the bottom_bar as verses can take multiple lines in a day.
 		config: {
-            version: 'NIV' // This can be changed to any version you want that is offered by Bible Gateway. For a list, go here: https://www.biblegateway.com/versions/,
+            version: 'NIV', // This can be changed to any version you want that is offered by Bible Gateway. For a list, go here: https://www.biblegateway.com/versions/,
 	    size: 'small' // default value is medium, but can be changed. 
 		}
 	}
