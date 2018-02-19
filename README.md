@@ -38,7 +38,7 @@ The following properties can be configured:
 			<td><code>version</code></td>
 			<td>Here is a list of the supported Bible versions: https://www.biblegateway.com/versions/
       		<br/>
-			Note that <code>version</code> also determines the language of the Bible quote. The reference, i.e. name of the book, is determined by the global <code>language</code> parameter in your config 
+			Note that <code>version</code> also determines the language of the Bible verse. The language of the Bible reference, i.e. name of the book, is determined by the global <code>language</code> parameter in your config 
 			<br/>
       		Examples: <code>ESV</code>, <code>NIV</code>, <code>RV1960</code>, etc.
 			</td>
