@@ -1,0 +1,22 @@
+{
+  "name": "mmm-dailybibleverse",
+  "version": "1.0.0",
+  "description": "Magic mirror module which displays Bible verse of the day",
+  "main": "MMM-DailyBibleVerse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurgarzajr/MMM-DailyBibleVerse.git"
+  },
+  "author": "Arthur Garza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arthurgarzajr/MMM-DailyBibleVerse/issues"
+  },
+  "homepage": "https://github.com/arthurgarzajr/MMM-DailyBibleVerse#readme",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}
