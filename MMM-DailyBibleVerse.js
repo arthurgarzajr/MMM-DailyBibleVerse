@@ -34,7 +34,16 @@ Module.register("MMM-DailyBibleVerse", {
 
         if(this.verseOfTheDay != null && this.reference != null){
             verse = this.verseOfTheDay;
-            reference = " - " + this.reference;
+
+            // split reference in book and chapter reference, ex. for
+            // input "1 Corinthian 13:6,7" => "1 Corinthian", "13:6,7"
+            reference = this.reference.trim();
+            var lastSpace = reference.lastIndexOf(" ");
+            var book = reference.substring(0, lastSpace);
+            var chapter = reference.substring(lastSpace+1, reference.length);
+
+            // now we build the reference with translated book title
+            reference = " - " + this.translate(book) + " " + chapter;
         }
 
         var wrapper = document.createElement("div");
@@ -62,6 +71,15 @@ Module.register("MMM-DailyBibleVerse", {
         return [
             this.file('jquery-3.1.1.min.js'), // this file will be loaded straight from the module folder.
         ]
+    },
+
+    getTranslations: function() {
+        return {
+                de: "translations/de.json",
+                en: "translations/en.json",                
+                es: "translations/es.json",
+                nl: "translations/nl.json",
+        }
     },
 
     socketNotificationReceived: function(notification, payload) {
