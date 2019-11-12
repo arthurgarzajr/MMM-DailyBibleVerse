@@ -17,7 +17,8 @@ modules: [
 		position: 'bottom_bar',	// This can be any of the regions. Best result is in the bottom_bar as verses can take multiple lines in a day.
 		config: {
 			version: 'NIV', // This can be changed to any version you want that is offered by Bible Gateway. For a list, go here: https://www.biblegateway.com/versions/,
-	    	size: 'small' // default value is medium, but can be changed. 
+			size: 'small', // default value is medium, but can be changed. 
+			showVersion: false // if the value is true, the version id it is added after the reference.
 		}
 	}
 ]
@@ -49,6 +50,15 @@ The following properties can be configured:
 		<tr>
 			<td><code>size</code></td>
 			<td>Default size is medium but it can be overriden with <code>xsmall</code>, <code>small</code> or <code>large</code>.</td>
+		</tr>
+		<tr>
+			<td><code>showVersion</code></td>
+			<td>Default value is <code>false</code> but it can be overriden with <code>true</code> or <code>false</code>.
+      		<br/>
+			Note if the value is <code>true</code>, the version id it is added after the reference.
+			<br/>
+      		Examples: "In the beginning God created the heavens and the earth." - Genesis 1:1 (NIV)
+			</td>
 		</tr>
 	</tbody>
 </table>
