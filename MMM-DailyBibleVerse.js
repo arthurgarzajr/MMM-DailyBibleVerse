@@ -25,6 +25,10 @@ Module.register("MMM-DailyBibleVerse", {
         }, 3600000); //perform every hour (3600000 milliseconds)
     },
 
+    getStyles: function () {
+        return ["MMM-DailyBibleVerse.css"];
+    },
+
     // Override dom generator.
     getDom: function() {
         Log.log("Updating MMM-DailyBibleVerse DOM.");
@@ -55,13 +59,13 @@ Module.register("MMM-DailyBibleVerse", {
                 wrapper.className = "bright small";
                 break;
             case 'medium':
-                wrapper.className = "bright";
+                wrapper.className = "bright medium";
                 break;
             case 'large':
                 wrapper.className = "bright large";
                 break;
             default:
-                wrapper.className = "bright";
+                wrapper.className = "bright medium";
         }
         wrapper.innerHTML = verse + reference;
         return wrapper;
