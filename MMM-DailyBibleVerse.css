@@ -1,0 +1,23 @@
+.MMM-DailyBibleVerse {
+    max-width: 100vh;
+    height: auto;
+    max-height: auto;
+    line-height: 1em;
+}
+
+.MMM-DailyBibleVerse .xsmall,
+.MMM-DailyBibleVerse .default {
+    max-width: 50vh;
+}
+
+.MMM-DailyBibleVerse .small {
+    max-width: 60vh;
+}
+
+.MMM-DailyBibleVerse .medium {
+    max-width: 75vh;
+}
+
+.MMM-DailyBibleVerse .large {
+    max-width: 100vh;
+}
