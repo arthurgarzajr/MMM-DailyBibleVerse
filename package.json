@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/arthurgarzajr/MMM-DailyBibleVerse#readme",
   "dependencies": {
-    "request": "^2.83.0"
+    "request": "^2.88.2"
   }
 }
